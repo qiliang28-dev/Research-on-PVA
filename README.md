@@ -43,6 +43,7 @@ The features extracted from raw data have been uploaded for the convenient to sk
     that can render specific method of segmentation.
 3. The resulting file will be appeared in the directory ./original_data3/interested_data, ./original_data3/seg_data and 
     ./original _data3/pics/ after running the function start_pre_process().
+  
 ### Data Annotation
 1.  Visual inspection is the main method to annotate for breath cycle. The members of this work would not like share the
     source code we have developed for visually labelling which is independent upon other works,such as data segmentation,
@@ -68,7 +69,11 @@ The features extracted from raw data have been uploaded for the convenient to sk
     m: embeded dimension and its default value is 3. 
     r_coe: scaled-coefficient of stand deviation. 
     ```
-2. The features extracted from the raw data were saved in the directory ./features/ after the procedure above. 
+2. The features extracted from the raw data were saved in the directory ./features/ after the procedure above.
+
+*Pay attention to the file .gitkeep listed in directories ./raw_data/original_data3/, which is so useless for the work
+above that the user ought to delete it.*
+
 ### Model training
 1. Please turn on the file ./models/models.py and concentrate your eyes on the entrance of the main function. There are 
     also two parts in it. The first part is related to the traditional machine learning methods including Random Forest,
@@ -128,6 +133,7 @@ The features extracted from raw data have been uploaded for the convenient to sk
    ```
 2.  The argument of groups refers to SIX CASES of combinations between ventilation mode and preconfigured conditions of 
     lung simulator. The file of ./dataset/description/overview.xlsx detailed the content of each group in sheet2.
+    
 ### Result saving
 1. All the results were automatically stored in ./results/ after model training and evaluating.
 
