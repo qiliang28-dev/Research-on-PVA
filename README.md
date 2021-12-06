@@ -4,9 +4,12 @@ Research on patient ventilator asynchrony: a novel  respiratory dataset and four
 
 This file introduces the method that how to use the repo.
 
-All package dependencies were listed in requirements.txt 
+All the package dependencies were listed in requirements.txt. 
 
 The features extracted from raw data have been uploaded for the convenient to skip front 4 steps to quickly get the results.
+
+The novel respiratory dataset was zipped in a file dataset.7z which is of size beyond 20MB, whereas it will nearly occupy 90
+MB of memory after releasing it, and the description about it ,including overview.xlsx,was deposited in ./dataset/description/.
 
 ### Unzip dataset
 1. The file ./dataset/raw_data.7z should initially be unzipped to the directory ./raw_data/original_data3/
